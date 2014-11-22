@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <!-- MEMO: update me with `git checkout gh-pages && git merge master && git push origin gh-pages` -->
+    <head>
+        <meta charset="utf-8">
+        <title>Scene City</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="bootstrap-material/dist/css/ripples.min.css" rel="stylesheet">
+        <link href="bootstrap-material/dist/css/material-wfont.min.css" rel="stylesheet">
+        <link href="app.css" rel="stylesheet">
+        <link href="https://fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="navbar navbar-default site-header">
+                <div class="navbar-header brand-logo">
+                    <button type="button" class="navbar-toggle collapsed-menu" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0)"></a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse top-bar-menu">
+                  
+                    <form class="navbar-form navbar-left">
+                        <input type="text" class="form-control col-lg-8" placeholder="Search">
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="javascript:void(0)">Link</a></li> -->
+                         <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">What's Hot <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Offers <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+        <div class="content">
+            <div class="btn-group btn-group-justified top-banner">
+                <div class="btn btn-default slider-img1">
+                    <div class="bottom-booking-banner"></div>
+                    <i class="mdi-av-my-library-music listen-to-band"></i>
+                    <div class="book-icon btn btn-primary btn-xs">Book</div>
+                </div>
+                <div class="btn btn-default slider-img2">
+                    <div class="bottom-booking-banner"></div>
+                    <i class="mdi-av-my-library-music listen-to-band"></i>
+                    <div class="book-icon btn btn-primary btn-xs">Book</div>
+                </div>
+                <div class="btn btn-default slider-img3">
+                    <div class="bottom-booking-banner"></div>
+                    <i class="mdi-av-my-library-music listen-to-band"></i>
+                    <div class="book-icon btn btn-primary btn-xs">Book</div>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified top-banner">
+               
+                <a href="javascript:void(0)" class="btn btn-default text-content-image"></a>
+                
+                    <div class="text-content">
+                    <p>Nullam quis risus eget <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo.</p>
+                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+                    <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+                    <p> An abbreviation of the word attribute is
+                        An abbreviation of the word attribute is
+                        An abbreviation of the word attribute is
+                        An abbreviation of the word attribute is
+                        An abbreviation of the word attribute is
+                        An abbreviation of the word attribute is
+                        An abbreviation of the word attribute is
+                     <abbr title="attribute">attr</abbr>.</p>
+                    </div>
+    
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="bootstrap-material/dist/js/ripples.min.js"></script>
+        <script src="bootstrap-material/dist/js/material.min.js"></script>
+        <script src="https://fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+        <script>
+            $(function() {
+                $.material.init();
+                $(".shor").noUiSlider({
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+
+                $(".svert").noUiSlider({
+                    orientation: "vertical",
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
